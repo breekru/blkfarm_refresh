@@ -15,6 +15,9 @@ header {
 	background: #00ff0c;
 }
 
+.secure {
+	background: blue;
+}
 
 header::after {
 	content: '';
