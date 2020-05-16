@@ -40,15 +40,14 @@ if (!is_array($_SESSION['user'])) {
   <header class="secure">
     <div class="container">
 
-      <img src ="img/blkfarm-logo-wide-transparent2.png" alt="logo" class="logo">
-
-      <nav>
+     <nav>
         <ul>
-          <li><a href="http://blkfarm.kindredsistersok.com/index.html">Home</a></li>
-          <li><a href="http://blkfarm.kindredsistersok.com/about.html">About</a></li>
-          <li><a href="http://blkfarm.kindredsistersok.com/blog.html">Blog</a></li>
-          <li><a href="http://blkfarm.kindredsistersok.com/contact.html">Contact</a></li>
-          <li><a href="http://blkfarm.kindredsistersok.com/login/1a-login.php">Admin Login</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Sheep</a></li>
+          <li><a href="#">Rabbits</a></li>
+          <li><a href="#">Chickens</a></li>
+          <li><a href="#">Hogs</a></li>
+          <li><a href="http://blkfarm.kindredsistersok.com/index.html" onclick="return logout();></a>Logout</li>
         </ul>
       </nav>
     </div>
