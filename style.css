@@ -11,7 +11,8 @@ body {
 }
 
 header {
-	background: #55d6aa;
+	/*background: #55d6aa;*/
+	background: #00ff0c;
 }
 
 
@@ -22,7 +23,7 @@ header::after {
 }
 .logo {
 	float: left;
-	height: 50px;
+	height: 80px;
 	padding: 10px 0;
 }
 
@@ -39,7 +40,7 @@ nav ul {
 nav li {
 	display: inline-block;
 	margin-left: 70px;
-	padding-top: 25px;
+	padding-top: 40px;
 
 	position: relative;
 }
