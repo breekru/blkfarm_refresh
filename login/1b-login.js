@@ -16,7 +16,7 @@ function login () {
       alert("Error loading page!");
     } else {
       if (this.response=="OK") {
-        window.location.href = "3-page.php";
+        window.location.href = "loggedin.php";
       } else {
         alert("Invalid email/password");
       }

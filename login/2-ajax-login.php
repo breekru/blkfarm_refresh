@@ -20,8 +20,8 @@ switch ($_POST['req']) {
     // Email => Password
     // ADD MORE OF YOUR OWN HERE!
     $users = [
-      "john@doe.com" => "123456",
-      "jane@doe.com" => "654321"
+      "breekru@gmail.com" => "abc123",
+      "blkfarm@gmail.com" => "test1234"
     ];
 
     // Check given email & password

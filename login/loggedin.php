@@ -1,8 +1,22 @@
+<?php
+// Init + Start session
+error_reporting(E_ALL & ~E_NOTICE);
+session_start();
+ 
+// Redirect users to the login page if not signed in
+if (!is_array($_SESSION['user'])) {
+  header("Location: 1a-login.php");
+  die();
+}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>Welcome to BLK Farm!!!</title>
+	<title>You have been logged in</title>
+	
+	<script src="1b-login.js"></script>
+	<link href="style.css" rel="stylesheet">
 </head>
 <body>
 <!--Nav Bar Starts-->
@@ -23,5 +37,11 @@
     </div>
   </header>
 <!--Nav Bar End-->
+	<h1>you have been logged in</h1>
+
+
+<input type="button" value="Logout" onclick="logout()"/>
 </body>
 </html>
+
+
