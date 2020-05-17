@@ -16,6 +16,7 @@ if (is_array($_SESSION['user'])) {
       Administrative login
     </title>
     <script src="1b-login.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
   </head>
   <body>

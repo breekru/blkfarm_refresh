@@ -12,6 +12,7 @@ if (!is_array($_SESSION['user'])) {
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
     <title>
       Login Example
     </title>

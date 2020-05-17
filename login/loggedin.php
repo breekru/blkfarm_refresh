@@ -16,6 +16,7 @@ if (!is_array($_SESSION['user'])) {
 	<title>You have been logged in</title>
 	
 	<script src="1b-login.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
 	<link href="style.css" rel="stylesheet">
 </head>
 <body>
@@ -46,8 +47,9 @@ if (!is_array($_SESSION['user'])) {
           <li><a href="#">Sheep</a></li>
           <li><a href="#">Rabbits</a></li>
           <li><a href="#">Chickens</a></li>
+          <li><a href="#">Turkeys</a></li>
           <li><a href="#">Hogs</a></li>
-          <li><a href="http://blkfarm.kindredsistersok.com/index.html" onclick="return logout();></a>Logout</li>
+          <li><a href="http://blkfarm.kindredsistersok.com/index.html" onclick="return logout();">Logout</a></li>
         </ul>
       </nav>
     </div>
