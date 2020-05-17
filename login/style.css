@@ -52,8 +52,12 @@ nav li {
 	display: inline-block;
 	margin-left: 70px;
 	padding-top: 10px;
+	padding-bottom: 10px;
 
 	position: relative;
+
+	color: #fff;
+
 }
 
 nav a {

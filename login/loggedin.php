@@ -43,13 +43,13 @@ if (!is_array($_SESSION['user'])) {
 
      <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Sheep</a></li>
-          <li><a href="#">Rabbits</a></li>
-          <li><a href="#">Chickens</a></li>
-          <li><a href="#">Turkeys</a></li>
-          <li><a href="#">Hogs</a></li>
-          <li><a href="http://blkfarm.kindredsistersok.com/index.html" onclick="return logout();">Logout</a></li>
+          <li class="secureli"><a href="#">Home</a></li>
+          <li class="secureli"><a href="#">Sheep</a></li>
+          <li class="secureli"><a href="#">Rabbits</a></li>
+          <li class="secureli"><a href="#">Chickens</a></li>
+          <li class="secureli"><a href="#">Turkeys</a></li>
+          <li class="secureli"><a href="#">Hogs</a></li>
+          <li class="secureli"><a href="http://blkfarm.kindredsistersok.com/index.html" onclick="return logout();">Logout</a></li>
         </ul>
       </nav>
     </div>
