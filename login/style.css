@@ -17,6 +17,7 @@ header {
 
 .secure {
 	background: blue;
+	color: #fff;
 }
 
 header::after {
