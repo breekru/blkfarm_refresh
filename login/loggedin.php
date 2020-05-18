@@ -41,7 +41,7 @@ if (!is_array($_SESSION['user'])) {
   <header class="secure">
     <div class="container">
 
-     <nav>
+     <nav class="secureli">
         <ul>
           <li class="secureli"><a href="#">Home</a></li>
           <li class="secureli"><a href="#">Sheep</a></li>
