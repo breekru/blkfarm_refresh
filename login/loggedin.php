@@ -49,7 +49,7 @@ if (!is_array($_SESSION['user'])) {
           <li class="secureli"><a href="#">Chickens</a></li>
           <li class="secureli"><a href="#">Turkeys</a></li>
           <li class="secureli"><a href="#">Hogs</a></li>
-          <li class="secureli"><a href="http://blkfarm.kindredsistersok.com/index.html" onclick="return logout();">Logout</a></li>
+          <li class="secureli"><a href="http://blkfarms.com/index.html" onclick="return logout();">Logout</a></li>
         </ul>
       </nav>
     </div>

@@ -1,20 +1,44 @@
 <?php
-// VALIDATE USER AGAINST DATABASE
-$pass = validateUser($_POST['email'], $_POST['password']);
+// Init + Start session
+error_reporting(E_ALL & ~E_NOTICE);
+session_start();
 
-// Assuming that validateUser() returns an array of user data on valid
-// AND returns false on failure to validate
+// Handle AJAX request
+switch ($_POST['req']) {
+  // Invalid request
+  default:
+    echo "ERR";
+    break;
 
-$pass = is_array($pass);
-if ($pass) {
-  // START SESSION ON SUCCESSFUL VALIDATION
-  session_start();
-  $_SESSION['user'] = $pass;
-} 
+  // Sign In
+  case "in":
+    // Already signed in
+    if (is_array($_SESSION['user'])) {
+      die("OK");
+    }
 
-// JSON RESPONSE
-echo json_encode([
-  "status" => $pass,
-  "message" => $pass ? "OK" : "Invalid email/password"
-]);
+    // Email => Password
+    // ADD MORE OF YOUR OWN HERE!
+    $users = [
+      "test@test.com" => "test",
+      "jane@doe.com" => "654321"
+    ];
+
+    // Check given email & password
+    if (isset($users[$_POST['email']]) && $_POST['password'] == $users[$_POST['email']]) {
+      $_SESSION['user'] = [
+        "email" => $_POST['email']
+      ];
+      echo "OK";
+    } else {
+      echo "ERR";
+    }
+    break;
+
+  // Sign out
+  case "out":
+    unset ($_SESSION['user']);
+    echo "OK";
+    break;
+}
 ?>

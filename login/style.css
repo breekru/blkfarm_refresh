@@ -10,14 +10,14 @@ body {
 	margin: 0, auto;
 }
 
+
 header {
 	/*background: #55d6aa;*/
 	background: #00ff0c;
 }
 
 .secure {
-	background: blue;
-	color: #fff;
+	background: #fca103;
 }
 
 header::after {
@@ -56,9 +56,6 @@ nav li {
 	padding-bottom: 10px;
 
 	position: relative;
-
-	color: #fff;
-
 }
 
 nav a {
@@ -113,8 +110,9 @@ nav a:hover::before {
 }
 #login-form input[type=submit] {
   background: #00ff0c;
-  color: #fff;
+  color: #000;
   font-size: 1em;
   padding: 10px 0;
-  border: 0;
+  border: 0px;
 }
+

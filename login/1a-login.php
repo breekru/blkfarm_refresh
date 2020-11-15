@@ -28,11 +28,11 @@ if (is_array($_SESSION['user'])) {
 
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="login.html">Admin Login</a></li>
+          <li><a href="http://blkfarms.com/index.html">Home</a></li>
+          <li><a href="http://blkfarms.com/about.html">About</a></li>
+          <li><a href="http://blkfarms.com/blog.html">Blog</a></li>
+          <li><a href="http://blkfarms.com/contact.html">Contact</a></li>
+          <li><a href="http://blkfarms.com/login/1a-login.php">Admin Login</a></li>
         </ul>
       </nav>
     </div>
@@ -44,7 +44,7 @@ if (is_array($_SESSION['user'])) {
         PLEASE SIGN IN
       </h1>
       <label for="login_email">Email</label>
-      <input type="email" id="login-email" required/>
+      <input type="email" id="login-email" required autofocus/>
       <label for="login_password">Password</label>
       <input type="password" id="login-password" required/>
       <input type="submit" value="Sign In"/>
